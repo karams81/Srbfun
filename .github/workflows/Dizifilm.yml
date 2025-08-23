@@ -1,4 +1,4 @@
-name: Update M3U Playlists
+name: dizifilm
 
 on:
   schedule:
@@ -24,10 +24,10 @@ jobs:
           pip install beautifulsoup4 aiohttp
 
       - name: Run Python script for series
-        run: python dizi.py
+        run: python diziler.py
 
       - name: Run Python script for movies
-        run: python film.py
+        run: python filmler.py
 
       - name: Commit and push if changes exist
         run: |
